@@ -82,7 +82,7 @@ Feel free to connect with me:
 
 st.sidebar.subheader("💻 Check Out My Other Apps")
 st.sidebar.write("Explore more of my projects and demos here:")
-st.sidebar.write("🔗 [Streamlit Demo Apps](https://share.streamlit.io/user/cherimedz)")
+st.sidebar.write("🔗 [Streamlit Apps](https://share.streamlit.io/user/cherimedz)")
 
 st.sidebar.subheader("📬 Contact Me")
 st.sidebar.write("""
