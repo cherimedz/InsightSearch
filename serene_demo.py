@@ -60,10 +60,19 @@ You can perform powerful searches with `AND`, `OR`, and `NOT` operations to quic
 - Upload multiple text files to create your own searchable document repository.
 - Perform complex Boolean searches with ease.
 - View the contents of matching documents directly within the app.
-
 """)
 
 st.sidebar.header("🚀 Quick Actions")
+
+uploaded_files = st.file_uploader("", accept_multiple_files=True, type=['txt'])
+
+if uploaded_files:
+    for file in uploaded_files:
+        content = file.read().decode("utf-8")
+        document_dict[file.name] = content
+
+    st.success(f"Successfully uploaded {len(uploaded_files)} file(s)!")
+    inverted_idx = create_inverted_index(document_dict)
 
 if st.sidebar.button("📁 View Uploaded Documents"):
     if document_dict:
@@ -102,16 +111,8 @@ if st.sidebar.button("Submit Feedback"):
         st.sidebar.write("Please enter your feedback before submitting.")
 
 st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
-uploaded_files = st.file_uploader("", accept_multiple_files=True, type=['txt'])
 
-if uploaded_files:
-    st.success(f"Successfully uploaded {len(uploaded_files)} file(s)!")
-    for file in uploaded_files:
-        content = file.read().decode("utf-8")
-        document_dict[file.name] = content
-
-    inverted_idx = create_inverted_index(document_dict)
-    
+if document_dict:
     search_query = st.text_input("Enter your search query:")
 
     st.markdown("""
