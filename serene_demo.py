@@ -53,7 +53,7 @@ st.title("🌟 Welcome to Serene, the Document Search App 🌟")
 st.markdown("""
 **Thank you for visiting Serene!**
 
-Currently the demo version of Serene, this application allows you to easily search through a collection of text documents using Boolean logic.
+Currently the demo version of **Serene**, this application allows you to easily search through a collection of text documents using Boolean logic.
 You can perform powerful searches with `AND`, `OR`, and `NOT` operations to quickly find the information you need.
 
 **Key Features:**
