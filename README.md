@@ -1,5 +1,5 @@
 # Serene 🌟
-Serene is an innovative application built with Streamlit, designed to streamline your document search experience. By allowing users to upload text files and leverage powerful Boolean search capabilities, Serene helps you find specific information quickly and efficiently.
+**Serene** is an innovative application designed to streamline your document search experience. By allowing you to upload text files and leverage powerful Boolean search capabilities, Serene helps you find specific information quickly and efficiently.
 
 With an intuitive and elegant interface, Serene supports advanced search queries using AND, OR, and NOT operations, making it easier to extract relevant information from your documents.
 
