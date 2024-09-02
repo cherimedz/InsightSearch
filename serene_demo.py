@@ -7,6 +7,8 @@ st.set_page_config(page_title="Serene Demo", page_icon="🔍", layout="wide")
 with open("serene.css") as css_file:
     st.markdown(f"<style>{css_file.read()}</style>", unsafe_allow_html=True)
 
+st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
+
 def extract_terms(text):
     return set(re.findall(r'\b\w+\b', text.lower()))
 
@@ -109,8 +111,6 @@ if st.sidebar.button("Submit Feedback"):
             f.write(feedback + "\n")
     else:
         st.sidebar.write("Please enter your feedback before submitting.")
-
-st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
 
 if document_dict:
     search_query = st.text_input("Enter your search query:")
