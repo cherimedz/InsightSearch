@@ -2,6 +2,8 @@ import streamlit as st
 import re
 from collections import defaultdict
 
+st.set_page_config(page_title="InsightSearch Demo", page_icon="🔍", layout="wide")
+
 with open("styles_search.css") as css_file:
     st.markdown(f"<style>{css_file.read()}</style>", unsafe_allow_html=True)
 
