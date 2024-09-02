@@ -45,9 +45,6 @@ def search_boolean(inverted_idx, query, document_ids):
             matching_docs = matching_docs.union(inverted_idx.get(token, set()))
 
     return matching_docs
-    
-st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
-
 document_dict = {}
 
 st.title("🌟 Welcome to Serene, the Document Search App 🌟")
@@ -63,6 +60,8 @@ You can perform powerful searches with `AND`, `OR`, and `NOT` operations to quic
 - Perform complex Boolean searches with ease.
 - View the contents of matching documents directly within the app.
 """)
+
+st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
 
 st.sidebar.header("🚀 Quick Actions")
 
