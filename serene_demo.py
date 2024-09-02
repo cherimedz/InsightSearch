@@ -134,4 +134,4 @@ else:
     st.info("Please upload text files to get started.")
 
 st.markdown("---")
-st.markdown("**About Serene:** This demo app was created to showcase my assignment on simple information retrieval techniques using Streamlit. I plan to expand Serene with additional features and improvements in the future. Enjoy exploring and searching through your documents!")
+st.markdown("**About Serene:** This app was created to showcase my assignment on simple information retrieval techniques using Streamlit. I plan to expand Serene with additional features and improvements in the future. Enjoy exploring and searching through your documents!")
