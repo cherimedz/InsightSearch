@@ -48,12 +48,12 @@ def search_boolean(inverted_idx, query, document_ids):
 
 document_dict = {}
 
-st.title("🌟 Welcome to InsightSearch, the Document Search Demo App 🌟")
+st.title("🌟 Welcome to Serene, the Document Search App 🌟")
 
 st.markdown("""
-**Thank you for visiting InsightSearch!**
+**Thank you for visiting Serene!**
 
-This application allows you to easily search through a collection of text documents using Boolean logic.
+Currently the demo version of Serene, this application allows you to easily search through a collection of text documents using Boolean logic.
 You can perform powerful searches with `AND`, `OR`, and `NOT` operations to quickly find the information you need.
 
 **Key Features:**
