@@ -7,8 +7,6 @@ st.set_page_config(page_title="Serene Demo", page_icon="🔍", layout="wide")
 with open("serene.css") as css_file:
     st.markdown(f"<style>{css_file.read()}</style>", unsafe_allow_html=True)
 
-st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
-
 def extract_terms(text):
     return set(re.findall(r'\b\w+\b', text.lower()))
 
@@ -47,6 +45,8 @@ def search_boolean(inverted_idx, query, document_ids):
             matching_docs = matching_docs.union(inverted_idx.get(token, set()))
 
     return matching_docs
+    
+st.markdown("<h2 style='font-size: 24px; font-weight: bold;'>Upload Your Text Files Here</h2>", unsafe_allow_html=True)
 
 document_dict = {}
 
